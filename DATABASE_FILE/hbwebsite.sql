@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th3 05, 2025 lúc 04:05 AM
+-- Thời gian đã tạo: Th4 13, 2025 lúc 07:48 AM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -63,22 +63,7 @@ CREATE TABLE `booking_details` (
 --
 
 INSERT INTO `booking_details` (`sr_no`, `booking_id`, `room_name`, `price`, `total_pay`, `room_no`, `user_name`, `phonenum`, `address`) VALUES
-(107, 108, 'Phòng Vip 3', 1500000, 3000000, NULL, 'phan nhật trường', '0398897449', 'NA'),
-(108, 109, 'Phòng Bình Dân', 800000, 1600000, NULL, 'phan nhật trường', '0398897449', 'NA'),
-(109, 110, 'Phòng Vip 3', 1500000, 3000000, NULL, 'phan nhật trường', '0398897449', 'NA'),
-(110, 111, 'Phòng Vip 3', 1500000, 3000000, NULL, 'Tạ Tống Thành', '0902034008', 'Đồng Nai'),
-(111, 112, 'Phòng Vip 3', 1500000, 3000000, NULL, 'Tạ Tống Thành', '0902034008', 'Đồng Nai'),
-(112, 113, 'Phòng Vip 3', 1500000, 1500000, NULL, 'Tạ Tống Thành', '0902034008', 'Đồng Nai'),
-(113, 114, 'Phòng Bình Dân', 800000, 6400000, NULL, 'Tạ Tống Thành', '0902034008', 'Đồng Nai'),
-(114, 115, 'Phòng Bình Dân', 800000, 7200000, NULL, 'Tạ Tống Thành', '0902034008', 'Đồng Nai'),
-(115, 116, 'Phòng Bình Dân', 800000, 2400000, NULL, 'Tạ Tống Thành', '0902034008', 'Đồng Nai'),
-(116, 117, 'Phòng Vip 3', 1500000, 4500000, NULL, 'phan nhật trường', '0398897449', 'NA'),
-(117, 118, 'Phòng Vip 2', 1200000, 2400000, NULL, 'phan nhật trường', '0398897449', 'NA'),
-(118, 119, 'Phòng Đơn', 500000, 1000000, NULL, 'phan nhật trường', '0398897449', 'NA'),
-(119, 120, 'Phòng Đơn', 500000, 5000000, NULL, 'phan nhật trường', '0398897449', 'NA'),
-(120, 121, 'Phòng Vip 3', 1500000, 1500000, NULL, 'Tạ Tống Thành', '0902034008', 'Đồng Nai'),
-(121, 122, 'Phòng Bình Dân', 800000, 800000, NULL, 'Tạ Tống Thành', '0902034008', 'Đồng Nai'),
-(122, 123, 'Phòng Vip 3', 1500000, 1500000, NULL, 'Tạ Tống Thành', '0902034008', 'Đồng Nai');
+(123, 124, 'Phòng Đơn', 500000, 1000000, NULL, 'phan nhật trường', '0398897449', 'NA');
 
 -- --------------------------------------------------------
 
@@ -109,22 +94,7 @@ CREATE TABLE `booking_order` (
 --
 
 INSERT INTO `booking_order` (`booking_id`, `user_id`, `room_id`, `check_in`, `check_out`, `arrival`, `refund`, `booking_status`, `order_id`, `trans_id`, `trans_amt`, `trans_status`, `trans_resp_msg`, `rate_review`, `datentime`) VALUES
-(108, 12, 6, '2024-05-29', '2024-05-31', 1, NULL, 'Đã Thanh Toán', 'ORD_128717583', NULL, 3000000, 'TXN_SUCCESS', NULL, NULL, '2024-05-29 17:55:41'),
-(109, 12, 3, '2024-05-29', '2024-05-31', 0, 0, 'Đã Huỷ', 'ORD_128400268', NULL, 0, 'Đã Đặt', NULL, NULL, '2024-05-29 18:00:24'),
-(110, 12, 6, '2024-05-29', '2024-05-31', 1, NULL, 'Đã Thanh Toán', 'ORD_127496571', NULL, 3000000, 'TXN_SUCCESS', NULL, 1, '2024-05-29 18:01:27'),
-(111, 13, 6, '2024-05-29', '2024-05-31', 1, NULL, 'Đã Thanh Toán', 'ORD_136020935', NULL, 3000000, 'TXN_SUCCESS', NULL, 1, '2024-05-29 18:04:19'),
-(112, 13, 6, '2024-05-29', '2024-05-31', 1, NULL, 'Đã Thanh Toán', 'ORD_135222900', NULL, 3000000, 'TXN_SUCCESS', NULL, 1, '2024-05-29 18:05:20'),
-(113, 13, 6, '2024-05-31', '2024-06-01', 0, 0, 'Đã Huỷ', 'ORD_132465293', NULL, 0, 'Đã Đặt', NULL, NULL, '2024-05-31 12:17:37'),
-(114, 13, 3, '2024-06-06', '2024-06-14', 0, 0, 'Đã Huỷ', 'ORD_131970218', NULL, 0, 'Đã Đặt', NULL, NULL, '2024-06-06 14:34:19'),
-(115, 13, 3, '2024-06-08', '2024-06-17', 1, NULL, 'Đã Thanh Toán', 'ORD_13982758', NULL, 7200000, 'TXN_SUCCESS', NULL, NULL, '2024-06-08 19:39:14'),
-(116, 13, 3, '2024-06-25', '2024-06-28', 0, 0, 'Đã Huỷ', 'ORD_13897455', NULL, 0, 'Đã Đặt', NULL, NULL, '2024-06-08 19:39:51'),
-(117, 12, 6, '2024-06-26', '2024-06-29', 0, NULL, 'Đã Đặt', 'ORD_128705975', NULL, 0, 'Đã Đặt', NULL, NULL, '2024-06-08 19:40:21'),
-(118, 12, 5, '2024-06-17', '2024-06-19', 0, NULL, 'Đã Xác Nhận Đặt Phòng', 'ORD_129194006', NULL, 0, 'Đã Đặt', NULL, NULL, '2024-06-17 18:28:53'),
-(119, 12, 8, '2024-06-17', '2024-06-19', 0, NULL, 'Đã Đặt', 'ORD_128591819', NULL, 0, 'Đã Đặt', NULL, NULL, '2024-06-17 18:33:35'),
-(120, 12, 8, '2024-06-17', '2024-06-27', 0, NULL, 'Đã Đặt', 'ORD_12570783', NULL, 0, 'Đã Đặt', NULL, NULL, '2024-06-17 18:33:48'),
-(121, 13, 6, '2025-02-19', '2025-02-20', 0, NULL, 'Đã Đặt', 'ORD_139902171', NULL, 0, 'Đã Đặt', NULL, NULL, '2025-02-19 10:22:30'),
-(122, 13, 3, '2025-02-26', '2025-02-27', 0, NULL, 'Đã Đặt', 'ORD_135031411', NULL, 0, 'Đã Đặt', NULL, NULL, '2025-02-26 10:53:25'),
-(123, 13, 6, '2025-02-26', '2025-02-27', 0, NULL, 'Đã Đặt', 'ORD_137359227', NULL, 0, 'Đã Đặt', NULL, NULL, '2025-02-26 10:54:38');
+(124, 12, 8, '2025-04-02', '2025-04-04', 0, NULL, 'Đã Xác Nhận Đặt Phòng', 'ORD_127171154', NULL, 0, 'Đã Đặt', NULL, NULL, '2025-04-02 11:21:33');
 
 -- --------------------------------------------------------
 
@@ -170,7 +140,7 @@ CREATE TABLE `contact_details` (
 --
 
 INSERT INTO `contact_details` (`sr_no`, `address`, `gmap`, `pn1`, `pn2`, `email`, `fb`, `insta`, `tw`, `iframe`) VALUES
-(1, 'Vũng Tàu,', 'https://goo.gl/maps/RvFRc2kyeJ3Hsq3VA', 84398897449, 84974562765, 'phannhattruong8291@gmail.com', 'https://www.facebook.com/', 'https://www.facebook.com/', '', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125575.34820161667!2d107.04064981712412!3d10.403328076166348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31756fd4554f0cf5:0xb24fd23bf641fa40!2zVsWpbmcgVMOgdSwgQsOgIFLhu4thIC0gVsWpbmcgVMOgdSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1717505403698!');
+(1, 'Vũng Tàu,', 'https://goo.gl/maps/RvFRc2kyeJ3Hsq3VA', 84398897449, 84974562765, 'phannhattruong8291@gmail.com', 'https://www.facebook.com/', 'https://www.facebook.com/', '', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4276422065363!2d106.78279807597018!3d10.855042689298564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c3debb5aad:0x5fb58956eb4194d0!2zxJDhuqFpIEjhu41jIEh1dGVjaCBLaHUgRQ!5e0!3m2!1svi!2s!4v1743561059562!5m2!1svi!2s');
 
 -- --------------------------------------------------------
 
@@ -234,15 +204,6 @@ CREATE TABLE `rating_review` (
   `seen` int(11) NOT NULL DEFAULT 0,
   `datentime` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Đang đổ dữ liệu cho bảng `rating_review`
---
-
-INSERT INTO `rating_review` (`sr_no`, `booking_id`, `room_id`, `user_id`, `rating`, `review`, `seen`, `datentime`) VALUES
-(15, 112, 6, 13, 5, 'rất đẹp', 0, '2024-06-08 19:39:25'),
-(16, 111, 6, 13, 5, 'êm đẹp', 0, '2024-06-08 19:39:59'),
-(17, 110, 6, 12, 3, 'cũng được, thoáng mát', 0, '2024-06-08 19:40:41');
 
 -- --------------------------------------------------------
 
@@ -404,7 +365,6 @@ CREATE TABLE `team_details` (
 --
 
 INSERT INTO `team_details` (`sr_no`, `name`, `picture`) VALUES
-(14, 'Tạ Tống Thành', 'IMG_47995.jpg'),
 (15, 'Phan Nhật Trường', 'IMG_41363.jpg');
 
 -- --------------------------------------------------------
@@ -435,8 +395,7 @@ CREATE TABLE `user_cred` (
 --
 
 INSERT INTO `user_cred` (`id`, `name`, `email`, `address`, `phonenum`, `pincode`, `dob`, `profile`, `password`, `is_verified`, `token`, `t_expire`, `status`, `datentime`) VALUES
-(12, 'phan nhật trường', 'phannhattruong8291@gmail.com', 'NA', '0398897449', 0, '2024-05-29', 'IMG_80988.jpg', '$2y$10$tmQu8l0A6NA0.CesL3DIVeBiO3wUGvoD128EPwZJ0QMQl3Ip2IRYS', 1, NULL, NULL, 1, '2024-05-29 17:54:28'),
-(13, 'Tạ Tống Thành', 'tatongthanh03@gmail.com', 'Đồng Nai', '0902034008', 60, '2024-05-06', 'IMG_86827.jpg', '$2y$10$bxNCkpY3kTRFgLT2igj4UuuW5Xl0Ah0VKMMdhZPr8F2xYwREmxJTO', 1, NULL, NULL, 1, '2024-05-29 18:04:04');
+(12, 'phan nhật trường', 'phannhattruong8291@gmail.com', 'NA', '0398897449', 0, '2024-05-29', 'IMG_80988.jpg', '$2y$10$tmQu8l0A6NA0.CesL3DIVeBiO3wUGvoD128EPwZJ0QMQl3Ip2IRYS', 1, NULL, NULL, 1, '2024-05-29 17:54:28');
 
 -- --------------------------------------------------------
 
@@ -586,13 +545,13 @@ ALTER TABLE `admin_cred`
 -- AUTO_INCREMENT cho bảng `booking_details`
 --
 ALTER TABLE `booking_details`
-  MODIFY `sr_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123;
+  MODIFY `sr_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
 
 --
 -- AUTO_INCREMENT cho bảng `booking_order`
 --
 ALTER TABLE `booking_order`
-  MODIFY `booking_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
+  MODIFY `booking_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=125;
 
 --
 -- AUTO_INCREMENT cho bảng `carousel`
